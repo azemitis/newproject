@@ -1,0 +1,10 @@
+{
+    "name": "aivis/newproject",
+    "authors": [
+        {
+            "name": "azemitis",
+            "email": "7-days@inbox.lv"
+        }
+    ],
+    "require": {}
+}
