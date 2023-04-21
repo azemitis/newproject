@@ -1,10 +1,11 @@
 {
     "name": "aivis/newproject",
-    "authors": [
-        {
-            "name": "azemitis",
-            "email": "7-days@inbox.lv"
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
         }
-    ],
-    "require": {}
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
 }

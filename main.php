@@ -4,8 +4,9 @@ require_once 'vendor/autoload.php';
 
 $apiClient = new \App\ApiClient();
 
-$amount = readline("Enter amount: ");
+$amount = (float) readline('Enter amount: ');
+$currencyName = (string) readline('Currency: ');
 
-$convertedAmount = $apiClient->convertCurrency($amount);
+$convertedAmount = $apiClient->convertCurrency($amount, $currencyName);
 
-echo "Converted amount: " . $convertedAmount . PHP_EOL;
+echo "Converted amount: " . $convertedAmount;
